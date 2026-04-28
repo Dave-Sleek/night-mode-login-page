@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #1f2937;
+  background: #f8f5ec;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border-2 border-pin/20 bg-white p-5 shadow-card;
+  }
+
+  .section-title {
+    @apply font-display text-xl text-ink;
+  }
+
+  .pill {
+    @apply rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent;
+  }
+}
